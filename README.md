@@ -13,7 +13,7 @@ The simulator calculates important performance metrics such as **Hit Rate**, **M
 
 The following screenshot shows the user interface of the TLB Parametric Analysis application. Users can enter simulation parameters, run the analysis, and view the calculated performance metrics along with graphical results.
 
-![TLB Parametric Analysis Interface](image/Screenshot 2026-07-03 014335.png)
+![TLB Parametric Analysis Interface](C:\Users\Jeslin Giby\Desktop\TLB_Project\image\Screenshot 2026-07-03 014335.png)
 
 ---
 ## Objective
