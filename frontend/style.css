@@ -1,0 +1,106 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #1eb39a, #92fe9d);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 25px;
+    background: #5f9cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4169e1;
+}
+
+/* RESULT CARD */
+.results-card {
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 50%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* GRAPH SECTION */
+#graphSection {
+    display: none;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.graph-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.graph-box {
+    background: rgba(255, 255, 255, 0.95);  /* soft white card */
+    padding: 20px;
+    border-radius: 15px;
+    width: 520px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+/* THEORY */
+.theory {
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+/* LOADER */
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

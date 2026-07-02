@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TLB Parametric Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>TLB Parametric Analysis</h1>
+
+    <!-- INPUT SECTION -->
+    <div class="card">
+        <input type="number" id="tlb_size" placeholder="Max TLB Size" min="1" max="128">
+        <input type="number" id="num_references" placeholder="Number of References" min="100" max="5000">
+        <input type="number" id="tlb_time" placeholder="TLB Access Time" min="1" max="50">
+        <input type="number" id="memory_time" placeholder="Memory Access Time" min="50" max="500">
+        <button onclick="runSimulation()">Run Simulation</button>
+    </div>
+
+    <!-- LOADER -->
+<div id="loader" style="display:none;">Loading...</div>
+
+<!-- RESULT CARD -->
+<div id="resultCard" style="display:none;">
+    <div class="results" id="result"></div>
+</div>
+
+<!-- GRAPH SECTION -->
+<div id="graphSection" class="graph-section" style="display:none;">
+
+    <div class="graph-row">
+
+        <div class="graph-box">
+            <canvas id="hitChart"></canvas>
+        </div>
+
+        <div class="graph-box">
+            <canvas id="ematChart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- THEORY SECTION -->
+    <div class="theory">
+        <h2>Theory</h2>
+        <p><b>Translation Lookaside Buffer (TLB)</b> is a high-speed cache 
+        used to store recent page table entries.</p>
+
+        <p><b>Hit Rate</b> is the percentage of references found in TLB.</p>
+
+        <p><b>EMAT</b> measures overall memory performance considering hits and misses.</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
