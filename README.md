@@ -7,7 +7,15 @@ TLB Parametric Analysis is a web-based simulation application developed to analy
 The simulator calculates important performance metrics such as **Hit Rate**, **Miss Rate**, and **Effective Memory Access Time (EMAT)**. It also determines the **optimal TLB size** by comparing EMAT values across multiple TLB configurations.
 
 ---
+---
 
+## Application Interface
+
+The following screenshot shows the user interface of the TLB Parametric Analysis application. Users can enter simulation parameters, run the analysis, and view the calculated performance metrics along with graphical results.
+
+![TLB Parametric Analysis Interface](image/Screenshot 2026-07-03 014335.png)
+
+---
 ## Objective
 
 The objective of this project is to:
